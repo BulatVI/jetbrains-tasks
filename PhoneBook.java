@@ -9,9 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class Main {
-    //    public static void main(String[] args) {
-//        System.out.println(millisToTime(1012130623));
-//    }
+    
     public static void main(String[] args) throws IOException {
 
         //1
@@ -22,29 +20,29 @@ public class Main {
         try (BufferedReader br1 = new BufferedReader(new FileReader("F:\\Мои документы\\Загрузки\\directory.txt"));
              BufferedReader br2 = new BufferedReader(new FileReader("F:\\Мои документы\\Загрузки\\find.txt"))) {
 
-            StringBuilder sb1 = new StringBuilder();
-            while (br1.ready()) {
-                sb1.append(br1.readLine());
-            }
-            String s = sb1.toString();
-            while (br2.ready()) {
-                numberOfLines++;
-                if (s.contains(br2.readLine())) {
-                    find++;
-                }
-            }
-
 //            StringBuilder sb1 = new StringBuilder();
 //            while (br1.ready()) {
-//                sb1.append(br1.readLine()).append("\n");
+//                sb1.append(br1.readLine());
 //            }
-//            String[] s = sb1.toString().split("\n");
+//            String s = sb1.toString();
 //            while (br2.ready()) {
-//                numberOfLines++;
-//                if (linearSearch(s, br2.readLine().trim()) >= 0) {
-//                    find++;
+ //               numberOfLines++;
+//                if (s.contains(br2.readLine())) {
+ //                   find++;
 //                }
 //            }
+
+            StringBuilder sb1 = new StringBuilder();
+            while (br1.ready()) {
+                sb1.append(br1.readLine()).append("\n");
+            }
+           String[] s = sb1.toString().split("\n");
+            while (br2.ready()) {
+                numberOfLines++;
+                if (linearSearch(s, br2.readLine().trim()) >= 0) {
+                   find++;
+               }
+           }
         }
 
         long finish = System.currentTimeMillis();
@@ -97,19 +95,19 @@ public class Main {
             long startSearching = System.currentTimeMillis();
 
             if (!b[0]) {
-                String str = sb1.toString();
+                //String str = sb1.toString();
+                //while (br2.ready()) {
+              //      numberOfLines++;
+                //    if (str.contains(br2.readLine())) {
+               //         find++;
+              //      }
+              //  }
                 while (br2.ready()) {
                     numberOfLines++;
-                    if (str.contains(br2.readLine())) {
+                    if (linearSearch(s, br2.readLine().trim()) >= 0) {
                         find++;
                     }
                 }
-//                while (br2.ready()) {
-//                    numberOfLines++;
-//                    if (linearSearch(s, br2.readLine().trim()) >= 0) {
-//                        find++;
-//                    }
-//                }
                 long finishSearching = System.currentTimeMillis();
                 millisSearching = finishSearching - startSearching;
                 System.out.println("Found " + find + " / " + numberOfLines + " entries. Time taken: " + millisToTime(millisCreating + millisSearching));
@@ -218,16 +216,7 @@ public class Main {
                 TimeUnit.MILLISECONDS.toSeconds(millis) % 60,
                 millis % 1000
         );
-    }
-
-    public static void main2(String[] args) {
-        String[] s = new String[]{"123 qwe wow", "234 asd poy", "345 zxc ner"};
-        bubbleSort(s);
-        System.out.println(Arrays.toString(s));
-        System.out.println(linearSearch(s, "qwe wow"));
-        System.out.println(jumpSearch(s, "qwe wow"));
-    }
-
+    }  
 
     public static void quickSort(String[] source, int leftBorder, int rightBorder) {
         int leftMarker = leftBorder;

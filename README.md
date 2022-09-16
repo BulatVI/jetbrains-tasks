@@ -1,2 +1,2 @@
 # jetbrains-tasks
-various projects from jetbrains
+various projects from Jetbrains Academy

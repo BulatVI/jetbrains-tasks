@@ -1,11 +1,12 @@
-package tracker;
+package carsharing;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.*;
 
-public class Main {
+public class LearningProgressTracker {
+
     public static void main(String[] args) {
         //2
         /*System.out.println("Learning Progress Tracker");

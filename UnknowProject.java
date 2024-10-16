@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Main {
+public class UnknowProject {
 
     static Connection connection = null;
 

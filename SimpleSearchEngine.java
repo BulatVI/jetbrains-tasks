@@ -1,4 +1,4 @@
-package search;
+package carsharing;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -7,7 +7,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Main {
+public class SimpleSearchEngine {
     public static void main(String[] args) throws IOException {
         //1
         /*try (Scanner sc = new Scanner(System.in)) {

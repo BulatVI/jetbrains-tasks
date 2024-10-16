@@ -1,4 +1,4 @@
-package banking;
+package carsharing;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class Main {
+public class SimpleBankingSystem {
 
     static Connection connection = null;
 

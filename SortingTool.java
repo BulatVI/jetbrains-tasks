@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
-class SortingTool {
+public class SortingTool {
     public static void main(final String[] args) throws IOException {
         //1
         /*Scanner scanner = new Scanner(System.in);

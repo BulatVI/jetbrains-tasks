@@ -1,14 +1,13 @@
 package phonebook;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 
-public class Main {
+public class PhoneBook {
     
     public static void main(String[] args) throws IOException {
 

@@ -1,10 +1,10 @@
-package sorting;
+package carsharing;
 
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Main {
+class SortingTool {
     public static void main(final String[] args) throws IOException {
         //1
         /*Scanner scanner = new Scanner(System.in);

@@ -1,11 +1,10 @@
-package carsharing;
+package variousProjects;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class SimpleSearchEngine {
     public static void main(String[] args) throws IOException {

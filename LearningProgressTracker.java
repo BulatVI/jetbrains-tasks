@@ -1,4 +1,4 @@
-package carsharing;
+package variousProjects;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
